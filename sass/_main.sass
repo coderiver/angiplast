@@ -1,34 +1,367 @@
 // Normally mainpage styles
+html
+	font-size: 62.5%
+.out
+	width: 100%
+	+clr
+	background: url(../img/main-bg.jpg) repeat-x top center
 
 
+//HEADER
+.header
+	padding: 36px 22px 28px 22px
+	margin: 0 auto
+	width: 980px
+	+clr
+	vertical-align: top
+	+fs(0)
+	color: #232936
+	.logo
+		float: left
+	p
+		display: inline-block
+		vertical-align: bottom
+		width: 200px
+		padding: 23px 0px 0px 66px
+	.phone
+		display: inline-block
+		vertical-align: bottom
+		+fs(14)
+		text-align: right
+		width: 295px
+		.phone__number
+			float: right
+			display: block
+			padding-left: 13px
+			margin-bottom: -1px
+			padding-top: 3px
+			span
+				+osb
+		.phone__number_mod
+			display: block
+			+fs(24)
+	.language
+		display: block
+		float: right
+		border: 1px solid #c1d3dd
+		margin-top: 15px
+		position: relative
+		margin-top: 21px
+		margin-right: 1px
+		a
+			display: inline-block
+			padding: 9px 12px 7px 11px
+			i
+				display: block
+				box-shadow: 0 1px 3px rgba(0,0,1,.32)
+		.language__br
+			i
+				+s(language__br)
+		.language__ru
+			i
+				+s(language__ru)
+		.is-active
+			background-color: #9ebed1
+			box-shadow: inset 0 4px 5px rgba(0,0,1,.34)
+		&:after
+			width: 98%
+			display: block
+			content: ""
+			height: 1px
+			background: #c1d3dd
+	.nav
+		margin-top: 38px
+		width: 100%
+		display: block
+		background: url(../img/nav.png) repeat-x top left
+		+fs(0)
+		height: 50px
+		position: relative
+		&:before
+			bottom: -1px
+			box-shadow: 0 4px 12px 0 rgba(3, 146, 177, 1)
+			content: ""
+			display: block
+			height: 20px
+			background: #0392b1
+			left: 22px
+			position: absolute
+			border-radius: 20%
+			width: 936px
+			z-index: 2
+		&:after
+			bottom: 0px
+			box-shadow: 0 7px 30px 0 rgba(35, 58, 135, 1)
+			content: ""
+			display: block
+			height: 20px
+			left: 32px
+			border-radius: 20%
+			position: absolute
+			width: 916px
+			z-index: 1
+		li
+			display: block
+			float: left
+			a
+				+fs(12)
+				padding: 7px 40px 0px 39px
+				+ose
+				line-height: 36px
+				color: white
+				text-transform: uppercase
+				position: relative
+				display: inline-block
+				vertical-align: middle
+				z-index: 999
+				height: 43px
+				background: url(../img/nav.png) repeat-x top left
+				&:after
+					display: block
+					position: absolute
+					top: 0px
+					right: 0px
+					content: ""
+					width: 1px
+					height: 50px
+					background: #14367d
+					box-shadow: 0 1px 0 rgba(255,255,255,.35)
+			.is-active
+				background: url(../img/nav-active.png) repeat-x top center
+			a:hover
+				background: url(../img/nav-active.png) repeat-x top center
+		.nav__last
+			a
+				padding-right: 30px
+				padding-left: 30px
+				&:after
+					display: none
+//SLIDER
+
+.slider
+	width: 980px
+	padding: 0px 22px
+	margin: 0 auto
+	+clr
+	position: relative
+	height: 399px
+	.slider__block
+		width: 100%
+		+clr
+		.slider__item
+			width: 100%
+			color: white
+			height: 399px
+			background: url(../img/slider-item.jpg) no-repeat top left
+			position: relative
+			.slider__text
+				width: 360px
+				float: left
+				padding: 52px 0px 0px 78px
+			h2
+				+osb
+				+fs(36)
+				font-weight: normal
+				line-height: 42px
+				margin-bottom: 23px
+				i
+					display: inline-block
+					width: 1px
+					margin-left: -1px
+					position: relative
+					content: ""
+					height: 20px
+					&:before
+						display: block
+						content: ""
+						+s(arrow-white)
+						position: absolute
+						top: 3px
+						left: 10px
+			button
+				text-transform: uppercase
+				color: white
+				+ose
+				+fs(12)
+				position: absolute
+				right: 66px
+				bottom: 57px
+				padding-top: 4px
+				+s(button-green)
+				&:active
+					bottom: 56px
+				&:hover
+					+s(button-green-hov)
+	.slider__pagers
+		position: absolute
+		bottom: 55px
+		left: 102px
+		z-index: 999
+		span
+			float: left
+			background: #2151af
+			width: 12px
+			height: 12px
+			margin-right: 18px
+			display: block
+			text-indent: -1000px
+			cursor: pointer
+		.cycle-pager-active
+			background: #11b1d9
 
 
+//Content
+.content
+	width: 100%
+	+clr
+	background: white
+.content-i
+	width: 980px
+	padding: 0px 22px 64px 22px
+	margin: 0 auto
+	+clr
+	h3
+		color: #232935
+		+osb
+		+fs(24)
+		font-weight: normal
+		padding-bottom: 3px
+		i
+			display: inline-block
+			width: 1px
+			height: 24px
+			margin-left: -1px
+			position: relative
+			&:before
+				display: block
+				content: ""
+				+s(arrow-black)
+				position: absolute
+				top: 10px
+				left: 10px
+
+//company
+.company
+	float: left
+	width: 606px
+	padding-top: 48px
+	p
+		margin-top: 20px
+		span
+			+osb
+			a
+				border-bottom: 1px solid #2352b1
+				color: #2352b1
+				&:hover
+					border: none
+					color: #048caf
+	.company__logos
+		margin-top: 44px
+		border-top: 3px solid #e4e4e4
+		padding-top: 29px
+		width: 100%
+		a
+			display: block
+			float: left
+			margin-left: 27px
+			&:first-child
+				margin-left: 0px
+				margin-right: 10px
 
 
+//news
+.news_mod
+	width: 316px
+	float: right
+	margin-top: 48px
+	display: block
+	+clr
+.news
+	width: 316px
+	margin-top: 21px
+	float: right
+	display: block
+	img
+		margin: 0px 0px 20px 0px
+		background-color: #232936
+		float: left
+		box-shadow: 0 1px 3px rgba(0,0,1,.34)
+		+clr
+	.news__text
+		+fs(14)
+		line-height: 20px
+		+osr
+		color: #2353b2
+		text-decoration: underline
+		display: block
+		margin: 0px
+		padding: 0px
+		+clr
+	&:hover
+		.news__text
+			text-decoration: none
+			color: #048baf
+	.date
+		display: block
+		margin-top: 16px
+		float: left
+		color: #aaa
+		+osr
+		+fs(13)
+		letter-spacing: 1.4px
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//footer
+.footer
+	background-color: #e3f1f8
+	width: 100%
+	.footer-i
+		width: 980px
+		padding: 39px 22px 59px 22px
+		margin: 0 auto
+		+clr
+		position: relative
+		.footer__copy, .footer__address
+			color: #747c8c
+			+osr
+			+fs(13)
+			line-height: 18px
+			padding-top: 12px
+			letter-spacing: 0.2px
+		.footer__copy
+			float: left
+			padding-left: 1px
+		.footer__address
+			margin: 0 auto
+			display: block
+			width: 210px
+		.footer__right
+			float: right
+			text-align: right
+			padding-right: 3px
+			.footer__phone
+				color: #222935
+				+osr
+				+fs(24)
+				display: block
+				line-height: 36px
+				span
+					+osb
+			.footer__mail
+				color: #2351b1
+				+osr
+				+fs(13)
+				text-decoration: underline
+				line-height: 18px
+				&:hover
+					text-decoration: none
+					color: #048baf
+			.footer__contacts
+				+s(footer-contacts)
+				display: block
+				position: absolute
+				bottom: 0px
+				right: 24px
 
 
 

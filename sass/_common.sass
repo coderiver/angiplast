@@ -57,25 +57,32 @@ body
 // common blocks      
 
 
+//FONTS
++font("Open Sans Regular", OpenSansRegular)
++font("Open Sans Bold", opensansbold-webfont)
++font("Open Sans Extrabold", opensansextrabold-webfont)
++font("Open Sans Semibold", opensanssemibold-webfont)
++font("Open Sans LightItalic", opensanslightitalic-webfont)
 
+=osr
+	font-family: "Open Sans Regular", Arial, sans-serif
+=osb
+	font-family: "Open Sans Bold", Arial, sans-serif
+=ose
+	font-family: "Open Sans Extrabold", Arial, sans-serif
+=oss
+	font-family: "Open Sans Semibold", Arial, sans-serif
+=osli
+	font-family: "Open Sans LightItalic", Arial, sans-serif
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//ALL
+p, span, ul, ol, li
+	+osr
+p
+	+fs(14)
+	line-height: 20px
+a
+	text-decoration: none
 
 
 

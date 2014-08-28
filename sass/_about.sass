@@ -1,0 +1,275 @@
+.out-i
+	background: url(../img/main-bg-i.jpg) repeat-x
+	.content-i
+		padding-bottom: 97px
+//sidebar
+.sidebar
+	float: left
+	width: 248px
+	background: url(../img/sidebar.jpg) no-repeat top left #143588
+	position: relative
+	padding-bottom: 17px
+	&:before
+		width: 210px
+		display: block
+		position: absolute
+		bottom: 5px
+		content: ""
+		height: 30px
+		left: 14px
+		box-shadow: 0px 7px 30px 0px rgba(35, 58, 135, 1)
+	.sidebar__heading
+		+ose
+		+fs(13px)
+		color: white
+		line-height: 36px
+		display: block
+		padding: 9px 32px 6px
+		text-transform: uppercase
+		letter-spacing: 0.7px
+	.sidebar__menu
+		width: 246px
+		padding: 0px 1px 0px 1px
+		li
+			a
+				padding: 12px 17px 8px 32px
+				display: block
+				color: white
+				text-decoration: none
+				position: relative
+				+oss
+				+fs(13)
+				line-height: 18px
+				&:before
+					width: 100%
+					display: block
+					content: ""
+					border-top: 1px solid #003380
+					border-bottom: 1px solid #0050b6
+					position: absolute
+					top: 0px
+					left: 0px
+		.sidebar__submenu
+			display: none
+			li
+				a
+					+osr
+					color: #abbedf
+					+fs(12)
+					padding: 8px 17px 10px 42px
+					&:hover
+						color: white
+					background: none
+					&:before
+						border-top: 1px solid #003380
+						border-bottom: 1px solid #0050b6
+				.is-first
+					&:before
+						border: none
+		.sidebar__active
+			a
+				background: #072b73
+				&:before
+					border: none
+//INNER
+.inner
+	float: left
+	padding-left: 36px
+	width: 696px
+.way
+	width: 100%
+	+fs(0)
+	padding-top: 18px
+	li
+		display: inline-block
+		a
+			+osr
+			+fs(12)
+			color: #b9b9b9
+			text-decoration: underline
+			margin-right: 8px
+			&:hover
+				text-decoration: none
+			&:after
+				display: inline-block
+				content: "/"
+				margin-left: 6px
+//inner-company
+.inner
+	.company
+		padding-top: 20px
+		width: 650px
+		p
+			margin-top: 14px
+			margin-bottom: 6px
+			float: left
+			+clr
+			padding-left: 2px
+.company__list
+	float: left
+	padding-top: 12px
+	padding-left: 20px
+	li
+		position: relative
+		+osr
+		+fs(14)
+		color: #232935
+		line-height: 18px
+		padding: 9px 28px
+		&:before
+			display: block
+			position: absolute
+			top: 16px
+			left: 0px
+			width: 6px
+			height: 6px
+			content: ""
+			border-radius: 3px
+			background-color: #1f49a5
+//inner info
+.inner
+	.company
+		.info
+			p
+				margin-top: 9px
+.info
+	float: left
+	width: 100%
+	+clr
+	padding-top: 48px
+	.info__img
+		width: 100%
+		padding-top: 26px
+		float: left
+		+clr
+		img
+			background-color: #fff
+			box-shadow: 0 1px 3px rgba(0,0,1,.34)
+			width: 305px
+			height: 179px
+			float: left
+			margin-top: 13px
+			margin-right: 35px
+		p
+			margin-top: 0px
+			width: 305px
+			display: block
+			float: left
+//info table
+.info__table
+	color: #232935
+	padding-top: 44px
+	+clr
+	float: left
+	width: 100%
+	h4
+		+oss
+		+fs(20)
+		padding-left: 2px
+		padding-bottom: 3px
+	.info__italic
+		+osli
+	table
+		width: 605px
+		border-bottom: solid 1px #bfe7fb
+		margin-top: 13px
+		float: left
+		margin-left: 3px
+		td
+			padding: 14px 10px 17px 10px
+			text-align: center
+			+oss
+			+fs(14)
+		.tr_mod
+			background: #bfe7fb
+//info news
+.info__news
+	float: left
+	width: 100%
+	+clr
+	padding-top: 56px
+	.info__row
+		width: 98%
+		padding: 0px 1.5% 33px 0.5%
+		+clr
+		.news
+			width: 305px
+			margin-top: 31px
+			&:first-child
+				float: left
+			img
+				margin-bottom: 17px
+			.news__text
+				margin-top: 4px
+				padding: 0px
+			.date
+				margin-top: 10px
+.pages
+	+fs(0)
+	margin-top: 22px
+	li
+		display: inline-block
+		a
+			+fs(14)
+			color: #253986
+			margin-right: 16px
+			margin-left: 2px
+			&:hover
+				color: #048bae
+		.is-active
+			color: #232936
+			
+//details
+.details
+	width: 100%
+	padding-top: 71px
+	float: left
+	+clr
+	ul
+		margin-top: 15px
+		li
+			+osr
+			+fs(14)
+			color: #232935
+			line-height: 24px
+			
+//contacts
+.contacts
+	width: 430px
+	+clr
+	padding-top: 64px
+	float: left
+	p
+		padding-top: 8px
+	ul
+		padding-top: 7px
+		width: 50%
+		li
+			+osr
+			+fs(14)
+			line-height: 24px
+			color: #232935
+			span
+				+osb
+			a
+				color: #2351b1
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+					color: #048baf
+	.contacts__left
+		float: left
+		text-align: left
+	.contacts__right
+		float: right
+		text-align: right
+		
+//map
+.map
+	float: left
+	+clr
+	margin-top: 50px
+	width: 610px
+	height: 305px
+	background-color: #232936
+	box-shadow: 0 1px 3px rgba(0,0,1,.34)
