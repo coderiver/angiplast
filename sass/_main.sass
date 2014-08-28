@@ -104,7 +104,7 @@ html
 			display: block
 			float: left
 			a
-				+fs(12)
+				font-size: 12px
 				padding: 7px 40px 0px 39px
 				+ose
 				line-height: 36px
@@ -220,6 +220,20 @@ html
 	padding: 0px 22px 64px 22px
 	margin: 0 auto
 	+clr
+	.company__link
+		margin-bottom: 3px
+		h3
+			color: #232935
+			+osb
+			+fs(24)
+			font-weight: normal
+			padding-bottom: 0px
+		&:hover
+			h3
+				color: #048caf
+				i
+					&:before
+						+s(arrow-black-hov)
 	h3
 		color: #232935
 		+osb
@@ -239,7 +253,6 @@ html
 				position: absolute
 				top: 10px
 				left: 10px
-
 //company
 .company
 	float: left
@@ -362,10 +375,6 @@ html
 				position: absolute
 				bottom: 0px
 				right: 24px
-
-
-
-
 
 
 
